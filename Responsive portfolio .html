@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>𝓓𝓪𝓻𝓴 𝓔𝓪𝓰𝓵𝓮 | Portfolio</title>
+  <style>
+    :root {
+      --main-color: #00ffe0;
+      --text-color: #ffffff;
+      --bg-color: #000000;
+      --secondary-color: #1f1f1f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: var(--secondary-color);
+      animation: slideIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--main-color);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #121212;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .profile {
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid var(--main-color);
+    }
+
+    .profile h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .typing {
+      color: var(--main-color);
+      font-size: 1.2rem;
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .socials a img {
+      width: 40px;
+      height: 40px;
+      filter: grayscale(100%);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .socials a img:hover {
+      transform: scale(1.2);
+      filter: grayscale(0%);
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h1 {
+      font-size: 2.5rem;
+      border-left: 4px solid var(--main-color);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline p, .service-item p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-item {
+      background: var(--secondary-color);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border-left: 4px solid var(--main-color);
+      transition: transform 0.3s;
+    }
+
+    .service-item:hover {
+      transform: scale(1.03);
+    }
+
+    .contact form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+      background: #2a2a2a;
+      color: var(--text-color);
+    }
+
+    .contact button {
+      background: var(--main-color);
+      color: black;
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #00c7b7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #121212;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-100px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝓒𝓞𝓓𝓔𝓧𝓧 🐼</h1>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#services">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="profile">
+    <img src="jamun.jpg" alt="𝓓𝓪𝓻𝓴 𝓔𝓪𝓰𝓵𝓮">
+    <h2>𝓓𝓪𝓻𝓴 𝓔𝓪𝓰𝓵𝓮</h2>
+    <div class="typing" id="typingEffect"></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/codexx__unofficial/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/Index_oss" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter/X">
+      </a>
+      <a href="https://www.linkedin.com/in/mohit-sharma-💖-143271330" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/index-oss" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
+
+  <section class="section" id="education">
+    <h1>Education</h1>
+    <div class="timeline">
+      <p><strong>2019:</strong> High School - Science</p>
+      <p><strong>2020:</strong> Started learning programming</p>
+      <p><strong>2021:</strong> Built my first CLI tool</p>
+      <p><strong>2022:</strong> Developed multiple Python and JS projects</p>
+      <p><strong>2023:</strong> Created ethical hacking tools & browser UI</p>
+      <p><strong>2024:</strong> Advanced into AI security & penetration testing</p>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h1>Projects</h1>
+    <div class="service-grid">
+      <div class="service-item">
+        <h2>Kali Linux Hacker Browser</h2>
+        <p>Web-based RAM-only browser UI with hackbar, proxy, system info & glitch animation. Fully responsive with terminal search result layout.</p>
+      </div>
+      <div class="service-item">
+        <h2>AI Self-Healing Server Tool</h2>
+        <p>Python CLI tool for monitoring logs, blocking threats, auto-restarting services & alerting the user using smart recovery logic.</p>
+      </div>
+      <div class="service-item">
+        <h2>Flip Card Voting Showcase</h2>
+        <p>Interactive 3D flip cards with animations, music, shuffle mode, and heartfelt quotes. Responsive layout for any device.</p>
+      </div>
+      <div class="service-item">
+        <h2>Device Recon Script</h2>
+        <p>Script to collect device info (CPU, camera, ports, sensors, installed apps, etc.) with SQLite DB backend. Useful for security audits.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h1>Skills</h1>
+    <ul>
+      <li>HTML, CSS, JavaScript, Tailwind CSS</li>
+      <li>Python, Node.js, SQLite</li>
+      <li>Termux, Linux CLI, Ethical Hacking</li>
+      <li>Responsive UI, Glitch Effects, Animations</li>
+      <li>AI integration, Server monitoring</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone number" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Type Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 𝓓𝓪𝓻𝓴 𝓔𝓪𝓰𝓵𝓮 | Built with Buddy
+  </footer>
+
+  <!-- Typing Effect -->
+  <script>
+    const words = ["Frontend DevOps", "Freelancer", "UI/UX Designer", "Web Developer", "Hacker Tools Builder"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 150;
+    const pause = 1000;
+
+    function type() {
+      if (charIndex < words[wordIndex].length) {
+        document.getElementById("typingEffect").innerHTML += words[wordIndex][charIndex];
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(() => {
+          document.getElementById("typingEffect").innerHTML = "";
+          charIndex = 0;
+          wordIndex = (wordIndex + 1) % words.length;
+          type();
+        }, pause);
+      }
+    }
+    type();
+  </script>
+
+  <!-- EmailJS Integration -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("Ag_NHXbM7jvUXK2G6"); // ✅ Replace this
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      emailjs.sendForm("service_6zd4xfv", "template_heikohd", this)
+        .then(function() {
+          alert("✅ Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        }, function(error) {
+          alert("❌ Failed to send message. Try again.");
+          console.error("Error:", error);
+        });
+    });
+  </script>
+</body>
+</html>
